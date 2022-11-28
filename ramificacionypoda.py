@@ -1,4 +1,4 @@
-N=4
+N=int(input("Ingrese cantidad de reinas:"))
 def RyP(lista=[],nivel=0):
     if nivel < N:
         if Valido(lista,nivel):
@@ -43,12 +43,12 @@ def Mostrar(lista):
                 s+="\t"
         s+="\n"
     print(s)
-                
-print ("#"*24)
-print ("LAS N - REINAS")
-print ("#"*24)
-lista = []
-for i in range(N):
-	lista.append(0)
-nivel = 0
-RyP(lista, nivel)
+if __name__ =='__main__':                
+    print ("#"*30)
+    print ("--------LAS N - REINAS--------")
+    print ("#"*30)
+    lista = []
+    for i in range(N):
+        lista.append(0)
+    nivel = 0
+    RyP(lista, nivel)
